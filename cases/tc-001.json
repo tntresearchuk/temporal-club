@@ -1,0 +1,46 @@
+{
+  "note_id": "TC-001",
+  "revision_id": "2026-09-25.1",
+  "revised_on": "2026-09-25",
+  "revision_log_url": "https://tntresearch.co.uk/temporal-club/revisions.json",
+  "synthetic": true,
+  "title": "The correction arrived tomorrow",
+  "time_zone": "Europe/London",
+  "instrument": "fictional instrument X",
+  "source": "fictional feed F",
+  "events": [
+    {
+      "id": "v1",
+      "type": "source_publication",
+      "source_record_id": "F-X-0900-v1",
+      "market_time": "2026-04-14T09:00:00+01:00",
+      "published_at": "2026-04-14T09:01:00+01:00",
+      "value": 101.20
+    },
+    {
+      "id": "decision",
+      "type": "agent_decision",
+      "at": "2026-04-14T09:10:00+01:00",
+      "action": "buy",
+      "agent_input_record": null
+    },
+    {
+      "id": "v2",
+      "type": "source_correction",
+      "source_record_id": "F-X-0900-v2",
+      "corrects": "F-X-0900-v1",
+      "market_time": "2026-04-14T09:00:00+01:00",
+      "published_at": "2026-04-15T08:00:00+01:00",
+      "value": 100.80
+    }
+  ],
+  "agent_feed_entitlement": true,
+  "delivery_latency": "unknown",
+  "expected_distinctions": {
+    "latest_corrected_source_value": 100.80,
+    "source_value_published_before_decision": 101.20,
+    "value_available_to_this_agent": "not provable without delivery evidence",
+    "value_actually_observed_by_agent": "unknown without an input or decision record"
+  },
+  "challenge": "Add the smallest fact that changes the answer about agent availability or observation."
+}

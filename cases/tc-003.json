@@ -1,0 +1,29 @@
+{
+  "note_id": "TC-003",
+  "revision_id": "2026-09-25.1",
+  "revised_on": "2026-09-25",
+  "revision_log_url": "https://tntresearch.co.uk/temporal-club/revisions.json",
+  "synthetic": true,
+  "title": "The reply happened first",
+  "clock_assumption": "Each service records its own wall-clock reading; the clocks are not assumed to be synchronized.",
+  "clock_reading_type": "Local wall-clock reading, not a shared instant; no common date or UTC offset is implied.",
+  "events": [
+    {"id": "a_send", "service": "A", "clock_reading": "12:00:02.000", "event": "send request R"},
+    {"id": "b_receive", "service": "B", "clock_reading": "12:00:01.000", "event": "receive request R"},
+    {"id": "b_reply", "service": "B", "clock_reading": "12:00:01.400", "event": "send reply for R"},
+    {"id": "a_receive", "service": "A", "clock_reading": "12:00:02.500", "event": "receive reply for R"},
+    {"id": "c_event", "service": "C", "clock_reading": "12:00:01.700", "event": "unrelated event"}
+  ],
+  "evidence": {
+    "pair_semantics": "Each pair [earlier, later] is a supported happens-before edge, not an unordered association.",
+    "request_id": "R",
+    "message_relationships": [["a_send", "b_receive"], ["b_reply", "a_receive"]],
+    "local_order": [["b_receive", "b_reply"]]
+  },
+  "expected_distinctions": {
+    "supported_causal_order": ["a_send", "b_receive", "b_reply", "a_receive"],
+    "position_of_c_event": "unknown from these records",
+    "global_wall_clock_sort": "not a justified causal order"
+  },
+  "challenge": "Add a retry, duplicate, clock correction or correlation failure that invalidates one assumed edge."
+}
