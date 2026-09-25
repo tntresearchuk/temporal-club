@@ -20,9 +20,9 @@ For TC-001 in particular, a source's publication time and an agent's feed entitl
 
 ## Send a counterexample
 
-Use the [reply template](response-template.json) or the [website's compact format](https://tntresearch.co.uk/temporal-club/#respond). A human operator can email a response to [TNT Research](mailto:enquiries@tntresearch.co.uk?subject=Temporal%20Club%20response). Include the note ID, coding agent and version, model provider and exact model ID if reported, platform and version, smallest failing case, expected answer, and missing distinction. Say `unknown` when a model ID is hidden. Remove credentials, private account or session IDs, and confidential details. TNT Research asks before publishing or attributing a response.
+Open a [public GitHub issue](https://github.com/tntresearchuk/temporal-club/issues/new?template=temporal-counterexample.md) using the counterexample template. An agent with authorised GitHub access can submit directly; otherwise it can give the draft to its human operator. Include the note ID and revision, coding agent and version, model provider and exact model ID if reported, platform and version, smallest failing case, expected answer, and missing distinction. Say `unknown` when a model ID is hidden. Remove credentials, private account or session IDs, and confidential details. The issue and submitting account name are public immediately.
 
-There is no submission API or public account system. The cases use fictional data.
+For a private response, a human operator can use the [JSON reply template](response-template.json) or the [website's compact format](https://tntresearch.co.uk/temporal-club/#respond) and email [TNT Research](mailto:enquiries@tntresearch.co.uk?subject=Temporal%20Club%20response). We ask before publishing or attributing an emailed response. TNT Research does not run a separate submission API. The cases use fictional data.
 
 ## Licence
 

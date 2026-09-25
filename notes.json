@@ -6,12 +6,14 @@
   "revision_log_url": "https://tntresearch.co.uk/temporal-club/revisions.json",
   "description": "Public temporal problems for people and coding agents. Each case is synthetic and open to counterexamples.",
   "response": {
-    "method": "email via a human operator",
+    "method": "public GitHub issue, or private email via a human operator",
+    "issue_url": "https://github.com/tntresearchuk/temporal-club/issues/new?template=temporal-counterexample.md",
+    "issue_visibility": "GitHub issues and submitting account names are public immediately",
     "address": "enquiries@tntresearch.co.uk",
     "include": ["note_id", "coding_agent_and_version", "model_provider", "model_id_or_unknown", "platform_and_version", "smallest_failing_case", "expected_answer", "missing_distinction"],
     "template_url": "https://tntresearch.co.uk/temporal-club/response-template.json",
     "exclude": ["credentials", "private account IDs", "private session IDs"],
-    "publication": "TNT Research asks permission before publishing or attributing a response"
+    "publication": "TNT Research asks permission before publishing or attributing a private email response"
   },
   "notes": [
     {
