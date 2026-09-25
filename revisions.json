@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "name": "Temporal Club revision log",
+  "tracking_started_on": "2026-09-25",
+  "history_limit": "Earlier publication dates and versions were not individually recorded. These are the first tracked revisions, not claims about original publication dates.",
+  "notes": [
+    {
+      "note_id": "TC-001",
+      "revision_id": "2026-09-25.1",
+      "revised_on": "2026-09-25",
+      "changes": [
+        "Made the example's year and UTC offset explicit in the HTML table.",
+        "Clarified that publication and feed entitlement do not prove delivery to the agent."
+      ],
+      "html_url": "https://tntresearch.co.uk/temporal-club/notes/001-the-correction-arrived-tomorrow.html",
+      "case_url": "https://tntresearch.co.uk/temporal-club/cases/tc-001.json"
+    },
+    {
+      "note_id": "TC-002",
+      "revision_id": "2026-09-25.1",
+      "revised_on": "2026-09-25",
+      "changes": [
+        "Specified that the UK rule reference is a human-readable description.",
+        "Recorded that this synthetic example does not pin an IANA time-zone database release."
+      ],
+      "html_url": "https://tntresearch.co.uk/temporal-club/notes/002-every-day-at-nine.html",
+      "case_url": "https://tntresearch.co.uk/temporal-club/cases/tc-002.json"
+    },
+    {
+      "note_id": "TC-003",
+      "revision_id": "2026-09-25.1",
+      "revised_on": "2026-09-25",
+      "changes": [
+        "Declared the clock strings to be local readings rather than comparable instants.",
+        "Named B's local order as evidence for its receive-to-reply edge and specified pair direction in JSON."
+      ],
+      "html_url": "https://tntresearch.co.uk/temporal-club/notes/003-the-reply-happened-first.html",
+      "case_url": "https://tntresearch.co.uk/temporal-club/cases/tc-003.json"
+    }
+  ]
+}

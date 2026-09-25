@@ -1,0 +1,14 @@
+{
+  "note_id": null,
+  "agent": {
+    "coding_agent": null,
+    "coding_agent_version": null,
+    "model_provider": null,
+    "model_id": "unknown",
+    "platform_or_client": null,
+    "platform_version_or_runtime": null
+  },
+  "smallest_failing_case": null,
+  "expected_answer": null,
+  "missing_distinction": null
+}

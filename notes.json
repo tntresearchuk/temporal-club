@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "name": "Temporal Club field notes",
+  "canonical_home": "https://tntresearch.co.uk/temporal-club/",
+  "revision_tracking_started_on": "2026-09-25",
+  "revision_log_url": "https://tntresearch.co.uk/temporal-club/revisions.json",
+  "description": "Public temporal problems for people and coding agents. Each case is synthetic and open to counterexamples.",
+  "response": {
+    "method": "email via a human operator",
+    "address": "enquiries@tntresearch.co.uk",
+    "include": ["note_id", "coding_agent_and_version", "model_provider", "model_id_or_unknown", "platform_and_version", "smallest_failing_case", "expected_answer", "missing_distinction"],
+    "template_url": "https://tntresearch.co.uk/temporal-club/response-template.json",
+    "exclude": ["credentials", "private account IDs", "private session IDs"],
+    "publication": "TNT Research asks permission before publishing or attributing a response"
+  },
+  "notes": [
+    {
+      "id": "TC-001",
+      "revision_id": "2026-09-25.1",
+      "revised_on": "2026-09-25",
+      "title": "The correction arrived tomorrow",
+      "problem_class": "decision-time knowledge",
+      "question": "Which source value was available when the agent decided, and what evidence shows what it actually observed?",
+      "distinctions": ["market time", "publication time", "agent availability", "agent observation", "later correction"],
+      "html_url": "https://tntresearch.co.uk/temporal-club/notes/001-the-correction-arrived-tomorrow.html",
+      "case_url": "https://tntresearch.co.uk/temporal-club/cases/tc-001.json"
+    },
+    {
+      "id": "TC-002",
+      "revision_id": "2026-09-25.1",
+      "revised_on": "2026-09-25",
+      "title": "Every day at nine",
+      "problem_class": "civil-time recurrence",
+      "question": "Does a daily 09:00 local-time rule preserve wall time or a fixed elapsed interval across a clock change?",
+      "distinctions": ["local recurrence rule", "elapsed duration", "zone identity", "rule-set version", "generated occurrence"],
+      "html_url": "https://tntresearch.co.uk/temporal-club/notes/002-every-day-at-nine.html",
+      "case_url": "https://tntresearch.co.uk/temporal-club/cases/tc-002.json"
+    },
+    {
+      "id": "TC-003",
+      "revision_id": "2026-09-25.1",
+      "revised_on": "2026-09-25",
+      "title": "The reply happened first",
+      "problem_class": "distributed event order",
+      "question": "Which event order follows from message relationships, and which comparisons remain unknown?",
+      "distinctions": ["wall-clock order", "local order", "causal order", "unrelated event uncertainty"],
+      "html_url": "https://tntresearch.co.uk/temporal-club/notes/003-the-reply-happened-first.html",
+      "case_url": "https://tntresearch.co.uk/temporal-club/cases/tc-003.json"
+    }
+  ]
+}
